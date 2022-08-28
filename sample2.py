@@ -5,13 +5,7 @@ class Solution:
         return a,M
         
 formart = 'T,A,MA'
-if formart[0] == 'T':
-    for tp in cfinput(formart):
-        sol = Solution()
-        ans = sol.solve(*tp)
-        print(ans)
-else:
-    tp = cfinput(formart)
+for tp in cfinput(formart):
     sol = Solution()
     ans = sol.solve(*tp)
     print(ans)

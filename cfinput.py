@@ -1,5 +1,11 @@
-
 def cfinput(formats):
+    ans = _cfinput(formats)
+    if formats[0] == 'T':
+        return ans
+    else:
+        return [ans]
+
+def _cfinput(formats):
     '''
     cf input data smart loader
     formart definition.
@@ -21,7 +27,7 @@ def cfinput(formats):
         test = int(input())
         ans = []
         for _ in range(test):
-            ans.append(cfinput(formats[2:]))
+            ans.append(_cfinput(formats[2:]))
         return ans
     else:
         ans = []
