@@ -56,6 +56,8 @@ for tp in cfinput(formart):
 
 请参考：
 
-[样例1](samply1.py)
+[样例1：样例数+数字矩阵](samply1.py)
 
-[样例2](samply2.py)
+[样例2：样例数+字符串矩阵](samply2.py)
+
+[样例3：不含样例数+数字矩阵](samply3.py)
