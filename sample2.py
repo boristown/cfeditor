@@ -1,20 +1,24 @@
 from cfinput import *
 
 class Solution:
-    def solve(self,a,b,N):
-        return a+b,N
-
-for tp in cfinput('T,AB,NB'):
+    def solve(self,a,M):
+        return a,M
+        
+for tp in cfinput('T,A,MA'):
     sol = Solution()
     ans = sol.solve(*tp)
     print(ans)
 
 '''
 input sample:
+3
 2
-1 1
-3 2
-1 2
-1 9 1
-2 2 8
+qweqwe
+adsfsaf
+1
+qweqweqwe
+3
+q
+aa
+sss
 '''
