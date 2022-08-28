@@ -17,7 +17,7 @@ def cfinput(formats):
             return vmap[vn]
         else:
             return int(vn)
-    if formats[0] == 'T':
+    if formats[0] == 'T': #Number of samples: T
         test = int(input())
         for _ in test:
             yield cfinput(formats[2:])
