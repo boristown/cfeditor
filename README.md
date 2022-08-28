@@ -61,3 +61,5 @@ for tp in cfinput(formart):
 [样例2：样例数+字符串矩阵](samply2.py)
 
 [样例3：不含样例数+数字矩阵](samply3.py)
+
+[样例4：比赛可以提交的完整样例](samply4.py)
