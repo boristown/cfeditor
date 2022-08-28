@@ -4,7 +4,14 @@ class Solution:
     def solve(self,a,b,N):
         return a+b,N
 
-for tp in cfinput('T,AB,NB'):
+formart = "'T,AB,NB'"
+if formart[0] == 'T':
+    for tp in cfinput(formart):
+        sol = Solution()
+        ans = sol.solve(*tp)
+        print(ans)
+else:
+    tp = cfinput(formart)
     sol = Solution()
     ans = sol.solve(*tp)
     print(ans)

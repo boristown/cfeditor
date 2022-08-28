@@ -26,7 +26,13 @@ class Solution:
 
 ```python []
 formart = "T,AB,NB" #formart格式参考后续说明
-for tp in cfinput(formart):
+if formart[0] == 'T':
+    for tp in cfinput(formart):
+        sol = Solution()
+        ans = sol.solve(*tp)
+        print(ans)
+else:
+    tp = cfinput(formart)
     sol = Solution()
     ans = sol.solve(*tp)
     print(ans)
