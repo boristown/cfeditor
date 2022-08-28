@@ -6,7 +6,9 @@ cf输入数据智能载入器
 
 ## 使用方法：
 
-1. 引入智能输入器：
+1. 引入cfinput（复制代码）：
+
+> 注意：cfinput不是标准包，提交代码到codeforces的时候，需要把cfinput.py包的代码复制进来。
 
 ```python []
 from cfinput import *
