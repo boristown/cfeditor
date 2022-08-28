@@ -1,6 +1,14 @@
 # A - YES or YES?
 # https://codeforces.com/contest/1703/problem/A
 
+from bisect import *
+from collections import *
+from itertools import *
+YES = 'YES'
+Yes = 'Yes'
+NO = 'NO'
+No = 'No'
+
 def cfinput(formats):
     ans = _cfinput(formats)
     if formats[0] == 'T':
@@ -68,8 +76,6 @@ def _cfinput(formats):
 
 class Solution:
     def solve(self,s):
-        YES = 'YES'
-        NO = 'NO'
         if s.upper() == YES:
             return YES
         return NO
