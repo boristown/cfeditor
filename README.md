@@ -14,12 +14,22 @@ cf输入数据智能载入器
 from cfinput import *
 ```
 
-2. 调用输入数据智能载入器：
+2. 实现Solution，如：
+
+```python []
+class Solution:
+    def solve(self,a,b,N):
+        return a+b,N
+```
+
+3. 调用cfinput和solution：
 
 ```python []
 formart = "T,AB,NB" #formart格式参考后续说明
-tp = cfinput(formart)
-solve(*tp)
+for tp in cfinput(formart):
+    sol = Solution()
+    ans = sol.solve(*tp)
+    print(ans)
 ```
 
 ## 格式定义：
@@ -44,4 +54,4 @@ solve(*tp)
 "T,AB,NB" 表示输入数据的第一行是样例的数量T，之后是T个样例，每个样例的第一行是空格分隔的A/B两个变量，之后是一个B行的数字矩阵，矩阵的每个元素都由空格分隔。
 
 
-[样例1](samply1.py)
+请参考：[样例1](samply1.py)

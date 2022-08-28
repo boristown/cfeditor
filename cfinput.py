@@ -19,8 +19,10 @@ def cfinput(formats):
             return int(vn)
     if formats[0] == 'T': #Number of samples: T
         test = int(input())
-        for _ in test:
-            yield cfinput(formats[2:])
+        ans = []
+        for _ in range(test):
+            ans.append(cfinput(formats[2:]))
+        return ans
     else:
         ans = []
         vmap = {}
@@ -29,7 +31,7 @@ def cfinput(formats):
             if line[0] in 'ABCDEFGHIJK': #Single variable：ABCDEFGHIJK
                 vars = list(map(int, input().split()))
                 for i,v in enumerate(vars):
-                    vmap[line[0][i]]=v
+                    vmap[line[i]]=v
                 ans.extend(vars)
             elif line[0] == 'L': #Horizontal list: L
                 L = list(map(int, input().split()))
