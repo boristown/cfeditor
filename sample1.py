@@ -1,6 +1,7 @@
 from cfinput import *
 
 class Solution:
+    
     def solve(self,a,b,N):
         return a+b,N
 
