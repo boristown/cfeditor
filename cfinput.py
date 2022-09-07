@@ -1,3 +1,6 @@
+import sys
+
+input = sys.stdin.readline()
 def cfinput(formats):
     '''
     cf input data smart loader

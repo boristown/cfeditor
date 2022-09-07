@@ -8,7 +8,8 @@ formart = 'ABC,NB'
 for tp in cfinput(formart):
     sol = Solution()
     ans = sol.solve(*tp)
-    print(ans)
+    sys.stdout.write(str(ans)+'\n')
+    sys.stdout.flush()
     
 '''
 input sample:

@@ -4,6 +4,9 @@
 from bisect import *
 from collections import *
 from itertools import *
+import sys
+
+input = sys.stdin.readline()
 
 def cfinput(formats):
     '''
@@ -84,4 +87,5 @@ formart = "T,S"
 for tp in cfinput(formart):
     sol = Solution()
     ans = sol.solve(*tp)
-    print(ans)
+    sys.stdout.write(str(ans)+'\n')
+    sys.stdout.flush()
