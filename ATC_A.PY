@@ -1,6 +1,7 @@
 _local_debug_ = True
 
 import time
+
 import sys
 
 input = sys.stdin.readline
@@ -31,10 +32,8 @@ def inmt(n):
 def solve():
     print('Yes')
 
-t = inp()
-for i in range(1, t + 1):
-    if is_debug: start = time.time()
-    solve()
-    if is_debug:
-        end = time.time()
-        print('Case #{}: {} ms'.format(i, (end - start) * 1000))
+if is_debug: start = time.time()
+solve()
+if is_debug:
+    end = time.time()
+    print('Time: {} ms'.format((end - start) * 1000))
