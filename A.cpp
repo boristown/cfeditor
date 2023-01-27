@@ -4,7 +4,7 @@
 using namespace std;
 
 void solve(){
-    cout << "Yes" << endl;
+    cout<<"Yes"<<endl;
 }
 
 int main(){

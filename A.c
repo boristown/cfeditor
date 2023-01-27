@@ -4,7 +4,7 @@
 #include <time.h>
 
 void solve(){
-    printf("Yes\n");
+    printf("Yes");
 }
 
 int main(){
