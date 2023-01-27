@@ -42,10 +42,11 @@ def copy_files(suf):
         dst = ch + '2.' + suf
         copy_file(src, dst)
         print('copy {} to {}'.format(src, dst))
+        copy_file('ATC_'+src, 'ATC_'+dst)
+        print('copy ATC_{} to ATC_{}'.format(src, dst))
 
 def main():
     copy_files('py')
-    copy_files('rs')
     copy_files('cpp')
     copy_files('c')
     print('Done')
